@@ -7,7 +7,7 @@ A simple Flask application that stores messages in SQLite and forwards them to D
 ```bash
 pip install -r requirements.txt
 export DISCORD_WEBHOOK_URL="<your webhook url>"   # never commit this value
-python app.py                                      # http://localhost:5001
+python app.py                                      # http://localhost:5001 (set PORT=8765 to change)
 ```
 
 ## Endpoints

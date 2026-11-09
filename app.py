@@ -90,4 +90,7 @@ def get_history():
 
 if __name__ == '__main__':
     # Starting the Flask server
-    app.run(debug=os.environ.get("FLASK_DEBUG") == "1", port=5001)
+    app.run(
+        debug=os.environ.get("FLASK_DEBUG") == "1",
+        port=int(os.environ.get("PORT", "5001")),
+    )
